@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "route": "/app/*",
+      "rewrite": "/app/index.html"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/app/index.html",
+    "exclude": ["/images/*", "/css/*", "/js/*", "/app/*"]
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".js": "application/javascript",
+    ".css": "text/css"
+  }
+}
